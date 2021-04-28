@@ -18,7 +18,7 @@ export class ExerciseService {
     return this.http.get<Exercise[]>(`${this.apiServerUrl}/exercise/all`);
   }
 
-  public addExercises(exercise: Exercise): Observable<Exercise> {
+  public addExercises(exercise: { name: string; weight: number }): Observable<Exercise> {
     return this.http.post<Exercise>(`${this.apiServerUrl}/exercise/add`, exercise);
   }
 
