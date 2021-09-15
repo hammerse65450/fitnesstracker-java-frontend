@@ -1,0 +1,92 @@
+
+#search{
+  width: calc(100% - 32px);
+  /*-webkit-box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+  /*box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+  border-radius: 20px;
+  padding: 32px;
+  margin: 16px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.exercise-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exercise {
+  width: calc(100% - 32px);
+  /*-webkit-box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+  /*box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+  padding: 32px;
+  margin: 16px;
+  border-radius: 20px;
+  background-color: #aad8d3;
+  color: #fff;
+  display: flex;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+
+.exercise .name{
+  width: 100%;
+  text-align: center;
+}
+
+.exercise .deleteIcon{
+  width: 100%;
+  text-align: left;
+}
+
+.exercise .weight-container .weight{
+  margin-left: 16px;
+  margin-right: 16px;
+
+}
+
+.exercise .weight-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+}
+
+#addButtonContainer{
+
+  margin-top: 32px;
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  .exercise .deleteIcon{
+    width: 10%;
+    text-align: right;
+  }
+
+  .exercise .weight-container{
+    width: 40%;
+    margin-top: 0px;
+  }
+  .exercise .name{
+    width: 50%;
+    text-align: left;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

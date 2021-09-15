@@ -1,0 +1,11 @@
+<h2>Create Workout</h2>
+<label for="name">Name</label>
+<input id="name" >
+
+<div *ngFor="let exercise of selectableExercises" class="exercise">
+
+  <span class="name">{{exercise.name}}</span>
+  <span class="selectIcon" (click)="selectExercise(exercise)"><img src="assets/trash.svg" width="25"></span>
+</div>
+
+<button (click)="addWorkout()">Create</button>

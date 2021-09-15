@@ -1,0 +1,16 @@
+<div class="exercise-container">
+  <input id="search" placeholder="Search..." (keyup)="searchFor()">
+  <div *ngFor="let exercise of exercises" class="exercise">
+
+    <span class="name">{{exercise.name}}</span>
+    <span class="weight-container">
+      <span class="minus" (click)="decreaseWeight(exercise)"><img src="assets/minus.svg" width="25"></span>
+      <span class="weight">{{exercise.weight}}</span>
+      <span class="plus" (click)="increaseWeight(exercise)"><img src="assets/plus.svg" width="25"></span>
+    </span>
+    <span class="deleteIcon" (click)="deleteExercise(exercise)"><img src="assets/trash.svg" width="25"></span>
+  </div>
+  <div id="addButtonContainer" (click)="addExercise()">
+    <img src="assets/plus.svg" width="80">
+  </div>
+</div>
