@@ -1,0 +1,12 @@
+<div class="backContainer" (click)="back()">
+  <img src="assets/back.svg" width="25">
+</div>
+<h2>
+  {{workout?.name}}
+</h2>
+<div class="container">
+  <div *ngFor="let exercise of workout?.exercises" class="exercise">
+    <span class="name">{{exercise.name}}</span>
+  </div>
+</div>
+

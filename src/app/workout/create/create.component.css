@@ -1,0 +1,44 @@
+
+#workoutName{
+  width: calc(100% - 32px);
+  padding: 8px;
+  margin: 16px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #393e46;;
+  display: flex;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#workoutName::placeholder{
+  text-align: left;
+}
+
+#workoutName:focus{
+ outline: none;
+}
+
+.exercise {
+  width: calc(100% - 32px);
+  /*-webkit-box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+  /*box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+  padding: 32px;
+  margin: 16px;
+  border-radius: 20px;
+  background-color: #aad8d3;
+  color: #fff;
+  display: flex;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.exercise .selectIcon{
+  width: 20%;
+  text-align: right;
+}
+.exercise .name{
+  width: 80%;
+  text-align: left;
+}

@@ -1,4 +1,14 @@
-<div *ngFor="let workout of workouts" class="exercise">
-
-  <span class="name">{{workout.name}}</span>
+<div class="backContainer" (click)="back()">
+  <img src="assets/back.svg" width="25">
 </div>
+<h2>Workouts</h2>
+<div class="container">
+  <a *ngFor="let workout of workouts" class="workout" (click)="detail()" [routerLink]="['/workouts', workout.id]">
+    <span class="name">{{workout.name}}</span>
+  </a>
+  <a class="addWorkout" routerLink="/workouts/create" routerLinkActive="active">
+    <img src="assets/plus.svg" width="80">
+  </a>
+</div>
+
+

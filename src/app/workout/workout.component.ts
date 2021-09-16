@@ -3,6 +3,7 @@ import {Workout} from '../workout';
 import {Exercise} from '../exercise';
 import {HttpErrorResponse} from '@angular/common/http';
 import {WorkoutService} from '../workout.service';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-workout',
@@ -13,7 +14,7 @@ export class WorkoutComponent implements OnInit {
 
   public workouts: Workout[] = [];
 
-  constructor(private workoutService: WorkoutService) { }
+  constructor(private workoutService: WorkoutService, private location: Location) { }
 
   ngOnInit(): void {
     this.getWorkouts();
@@ -31,4 +32,12 @@ export class WorkoutComponent implements OnInit {
     );
   }
 
+  public back(): void {
+    this.location.back();
+  }
+
+  public detail(): void {
+
+
+  }
 }
